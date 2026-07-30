@@ -1,8 +1,8 @@
 export const site = {
-  brand: 'Avinash',
-  tagline: 'Privacy-first Android apps',
+  brand: 'Productivity apps',
+  tagline: 'Useful Android tools you can try — donate if you want',
   description:
-    'Offline-friendly Android tools that keep your data on your device. Built by Avinash.',
+    'Discover simple Android productivity apps. Try them free, and donate if they help you.',
   email: 'avinash_42@ymail.com',
   // TODO: replace with your PayPal.me (or PayPal donate) URL
   paypalUrl: '#donate',

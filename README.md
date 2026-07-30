@@ -1,6 +1,6 @@
-# Avinash — Android apps site
+# Productivity apps
 
-Marketing site for [Private Sound Recorder](https://play.google.com/store/apps/details?id=avinash42.soundrecorder) and future Android apps.
+Marketing site for Android productivity apps — discover apps and optionally donate.
 
 **Live URL:**  
 https://avinash-bitm.github.io/avinashapps/
