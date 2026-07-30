@@ -14,13 +14,13 @@ const delayClass =
 
 <article
   class:list={[
-    'reveal group grid gap-4 border-b border-white/10 py-8 sm:grid-cols-[1fr_auto] sm:items-center',
+    'reveal group grid gap-4 border-b border-white/10 py-6 sm:grid-cols-[1fr_auto] sm:items-center sm:py-8',
     delayClass,
   ]}
 >
-  <div>
-    <div class="flex flex-wrap items-center gap-3">
-      <h2 class="text-2xl font-bold text-paper sm:text-3xl">
+  <div class="min-w-0">
+    <div class="flex flex-wrap items-center gap-2 sm:gap-3">
+      <h2 class="text-xl font-bold text-paper sm:text-3xl">
         <a class="link-underline" href={`${base}apps/${app.slug}/`}>{app.name}</a>
       </h2>
       <span
@@ -30,12 +30,12 @@ const delayClass =
         {app.tier}
       </span>
     </div>
-    <p class="mt-2 max-w-xl text-mist">{app.tagline}</p>
+    <p class="mt-2 max-w-xl text-sm text-mist sm:text-base">{app.tagline}</p>
   </div>
-  <div class="flex flex-wrap gap-3">
+  <div class="flex w-full flex-col gap-2 sm:w-auto sm:flex-row sm:flex-wrap sm:gap-3">
     <a
       href={`${base}apps/${app.slug}/`}
-      class="rounded-md border border-white/15 px-4 py-2 text-sm font-semibold text-paper transition hover:border-sky/50 hover:text-sky"
+      class="inline-flex w-full items-center justify-center rounded-md border border-white/15 px-4 py-2.5 text-sm font-semibold text-paper transition hover:border-sky/50 hover:text-sky sm:w-auto"
     >
       Details
     </a>
@@ -43,7 +43,7 @@ const delayClass =
       href={app.playUrl}
       target="_blank"
       rel="noopener noreferrer"
-      class="rounded-md bg-paper px-4 py-2 text-sm font-semibold text-ink transition hover:bg-white"
+      class="inline-flex w-full items-center justify-center rounded-md bg-paper px-4 py-2.5 text-sm font-semibold text-ink transition hover:bg-white sm:w-auto"
     >
       Get on Play
     </a>
