@@ -1,0 +1,27 @@
+---
+const bars = [
+  28, 48, 72, 40, 88, 56, 96, 64, 44, 80, 52, 70, 36, 90, 60, 78, 42, 85, 55, 68,
+  32, 74, 50, 92, 58, 46, 82, 38, 66, 54,
+];
+---
+
+<div
+  class="pointer-events-none absolute inset-0 overflow-hidden"
+  aria-hidden="true"
+>
+  <div
+    class="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_40%,rgba(45,212,191,0.18),transparent_55%),radial-gradient(ellipse_at_20%_80%,rgba(56,189,248,0.12),transparent_50%),linear-gradient(180deg,#0c1117_0%,#141b24_55%,#0c1117_100%)]"
+  >
+  </div>
+  <div class="absolute inset-x-0 bottom-0 flex h-[42vh] min-h-[220px] items-end justify-center gap-[3px] px-4 opacity-90 sm:gap-1.5 md:gap-2">
+    {
+      bars.map((h, i) => (
+        <span
+          class="wave-bar w-[3px] rounded-full bg-gradient-to-t from-teal/30 via-teal to-sky/80 sm:w-1.5 md:w-2"
+          style={`height:${h}%; animation-delay:${(i % 10) * 0.12}s`}
+        />
+      ))
+    }
+  </div>
+  <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-ink to-transparent"></div>
+</div>

@@ -1,0 +1,44 @@
+# Avinash — Android apps site
+
+Marketing site for [Private Sound Recorder](https://play.google.com/store/apps/details?id=avinash42.soundrecorder) and future Android apps.
+
+**Live URL (after Pages is enabled):**  
+https://avinash-bitm.github.io/sounrecorderwebsite/
+
+## Local development
+
+Requires **Node.js 22+** (see `.nvmrc`).
+
+```bash
+nvm use
+npm install
+npm run dev
+```
+
+Build:
+
+```bash
+npm run build
+npm run preview
+```
+
+## Add a new app
+
+1. Add an entry in `src/data/apps.ts`
+2. Optional assets under `public/apps/<slug>/`
+3. Push to `main` — GitHub Actions rebuilds the site
+
+## PayPal donation link
+
+Set `paypalUrl` in `src/data/site.ts` to your PayPal.me (or donate) URL.
+
+## Enable GitHub Pages
+
+1. Push this repo to GitHub (`main` branch)
+2. Repo **Settings → Pages → Build and deployment → Source: GitHub Actions**
+3. The `Deploy to GitHub Pages` workflow runs on every push to `main`
+
+Astro is configured with:
+
+- `site`: `https://avinash-bitm.github.io`
+- `base`: `/sounrecorderwebsite`

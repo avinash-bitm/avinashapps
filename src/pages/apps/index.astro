@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AppRow from '../../components/AppRow.astro';
+import { apps } from '../../data/apps';
+---
+
+<BaseLayout title="Apps" description="Android apps by Avinash — Private Sound Recorder and more.">
+  <section class="mx-auto max-w-5xl px-5 py-16 sm:py-20">
+    <p class="reveal text-sm font-semibold uppercase tracking-[0.14em] text-teal">Apps</p>
+    <h1 class="reveal reveal-delay-1 mt-3 font-display text-4xl font-bold text-paper sm:text-5xl">
+      Android apps
+    </h1>
+    <p class="reveal reveal-delay-2 mt-4 max-w-2xl text-lg text-mist">
+      Tools built for privacy and simplicity. More apps will appear here as they launch.
+    </p>
+    <div class="mt-6">
+      {apps.map((app, index) => <AppRow app={app} index={index} />)}
+    </div>
+  </section>
+</BaseLayout>

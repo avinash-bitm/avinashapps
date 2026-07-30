@@ -1,0 +1,36 @@
+---
+import { site } from '../data/site';
+const base = import.meta.env.BASE_URL;
+const year = new Date().getFullYear();
+const donateHref = site.paypalUrl.startsWith('http')
+  ? site.paypalUrl
+  : `${base}support/#donate`;
+const donateExternal = site.paypalUrl.startsWith('http');
+---
+
+<footer class="mt-auto border-t border-white/5 bg-ink-2">
+  <div class="mx-auto flex max-w-5xl flex-col gap-6 px-5 py-10 sm:flex-row sm:items-end sm:justify-between">
+    <div>
+      <p class="font-display text-lg font-bold text-paper">{site.brand}</p>
+      <p class="mt-1 max-w-sm text-sm text-mist">{site.tagline}</p>
+      <p class="mt-4 text-sm text-mist">
+        <a class="link-underline hover:text-paper" href={`mailto:${site.email}`}>{site.email}</a>
+      </p>
+    </div>
+    <div class="flex flex-col items-start gap-3 sm:items-end">
+      <a
+        href={donateHref}
+        class="inline-flex items-center rounded-md bg-teal px-4 py-2 text-sm font-semibold text-ink transition hover:bg-teal-dim"
+        {...(donateExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+      >
+        Donate via PayPal
+      </a>
+      <nav class="flex flex-wrap gap-4 text-sm text-mist" aria-label="Footer">
+        <a class="link-underline hover:text-paper" href={`${base}apps/`}>Apps</a>
+        <a class="link-underline hover:text-paper" href={`${base}privacy/`}>Privacy</a>
+        <a class="link-underline hover:text-paper" href={`${base}support/`}>Support</a>
+      </nav>
+      <p class="text-xs text-mist/70">© {year} {site.brand}</p>
+    </div>
+  </div>
+</footer>

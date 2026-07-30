@@ -1,0 +1,51 @@
+---
+import type { App } from '../data/apps';
+
+interface Props {
+  app: App;
+  index?: number;
+}
+
+const { app, index = 0 } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const delayClass =
+  index === 0 ? 'reveal-delay-1' : index === 1 ? 'reveal-delay-2' : 'reveal-delay-3';
+---
+
+<article
+  class:list={[
+    'reveal group grid gap-4 border-b border-white/10 py-8 sm:grid-cols-[1fr_auto] sm:items-center',
+    delayClass,
+  ]}
+>
+  <div>
+    <div class="flex flex-wrap items-center gap-3">
+      <h2 class="font-display text-2xl font-bold text-paper sm:text-3xl">
+        <a class="link-underline" href={`${base}apps/${app.slug}/`}>{app.name}</a>
+      </h2>
+      <span
+        class="rounded px-2 py-0.5 text-xs font-semibold uppercase tracking-wide text-ink"
+        style={`background:${app.accent}`}
+      >
+        {app.tier}
+      </span>
+    </div>
+    <p class="mt-2 max-w-xl text-mist">{app.tagline}</p>
+  </div>
+  <div class="flex flex-wrap gap-3">
+    <a
+      href={`${base}apps/${app.slug}/`}
+      class="rounded-md border border-white/15 px-4 py-2 text-sm font-semibold text-paper transition hover:border-teal/50 hover:text-teal"
+    >
+      Details
+    </a>
+    <a
+      href={app.playUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="rounded-md bg-paper px-4 py-2 text-sm font-semibold text-ink transition hover:bg-white"
+    >
+      Get on Play
+    </a>
+  </div>
+</article>

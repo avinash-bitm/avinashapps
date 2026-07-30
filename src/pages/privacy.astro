@@ -1,0 +1,124 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+---
+
+<BaseLayout title="Privacy Policy" description="Privacy policy for Sound Recorder and Sound Recorder Pro.">
+  <article class="mx-auto max-w-3xl px-5 py-16 sm:py-20 prose-custom">
+    <h1 class="font-display text-4xl font-bold text-paper sm:text-5xl">Privacy Policy</h1>
+    <p class="mt-3 text-sm text-mist">
+      <strong class="text-paper/80">Effective date:</strong> July 7, 2026
+      &nbsp;|&nbsp;
+      <strong class="text-paper/80">Last updated:</strong> July 7, 2026
+    </p>
+
+    <div class="mt-8 space-y-6 text-base leading-relaxed text-mist">
+      <p>
+        This Privacy Policy describes how <strong class="text-paper">Sound Recorder</strong> and
+        <strong class="text-paper">Sound Recorder Pro</strong> (the “Apps”) handle information when you use them.
+        The Apps are published on Google Play under the package names
+        <code class="rounded bg-ink-3 px-1.5 py-0.5 text-sm text-paper/90">avinash42.soundrecorder</code>
+        and
+        <code class="rounded bg-ink-3 px-1.5 py-0.5 text-sm text-paper/90">avinash42.soundrecorder.pro</code>.
+      </p>
+      <p>
+        Questions? Contact:
+        <a class="link-underline text-teal hover:text-teal-dim" href={`mailto:${site.email}`}>{site.email}</a>
+      </p>
+
+      <h2 class="font-display pt-4 text-2xl font-bold text-paper">Summary</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse text-left text-sm">
+          <thead>
+            <tr class="border-b border-white/15 text-paper">
+              <th class="py-2 pr-4 font-semibold"></th>
+              <th class="py-2 pr-4 font-semibold">Sound Recorder (Free)</th>
+              <th class="py-2 font-semibold">Sound Recorder Pro</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-white/10">
+              <td class="py-2 pr-4 text-paper/80">Internet access</td>
+              <td class="py-2 pr-4">No</td>
+              <td class="py-2">Yes (Drive backup only)</td>
+            </tr>
+            <tr class="border-b border-white/10">
+              <td class="py-2 pr-4 text-paper/80">Account required</td>
+              <td class="py-2 pr-4">No</td>
+              <td class="py-2">Only for Drive backup</td>
+            </tr>
+            <tr class="border-b border-white/10">
+              <td class="py-2 pr-4 text-paper/80">Cloud upload</td>
+              <td class="py-2 pr-4">No</td>
+              <td class="py-2">Only if you enable backup</td>
+            </tr>
+            <tr>
+              <td class="py-2 pr-4 text-paper/80">Ads or analytics</td>
+              <td class="py-2 pr-4">No</td>
+              <td class="py-2">No</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="font-display pt-4 text-2xl font-bold text-paper">1. What stays on your device</h2>
+      <p>
+        Both Apps store recordings and settings on your device: audio files, titles, durations, dates,
+        waveforms, bookmarks, and preferences. The free App never sends this data over the internet.
+      </p>
+
+      <h2 class="font-display pt-4 text-2xl font-bold text-paper">2. Permissions</h2>
+      <p>
+        The Apps may use the microphone, storage/media access, notifications, and vibration (optional).
+        Pro may also use internet and network state for Google Drive backup. Scheduled recordings (Pro)
+        may use exact alarms.
+      </p>
+
+      <h2 class="font-display pt-4 text-2xl font-bold text-paper">3. Google Drive backup (Pro only)</h2>
+      <p>If you sign in with Google and back up:</p>
+      <ul class="list-disc space-y-2 pl-5">
+        <li>Recordings and backup metadata are uploaded to <strong class="text-paper">your</strong> Google Drive account.</li>
+        <li>We do not operate servers that store your audio.</li>
+        <li>
+          Google Sign-In and Google Drive are subject to
+          <a class="link-underline text-teal hover:text-teal-dim" href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google’s Privacy Policy</a>.
+        </li>
+        <li>Backup runs only when you request it or enable auto-backup. You can sign out anytime.</li>
+      </ul>
+
+      <h2 class="font-display pt-4 text-2xl font-bold text-paper">4. What we do not do</h2>
+      <ul class="list-disc space-y-2 pl-5">
+        <li>No ads, no analytics SDKs, no sale of personal data.</li>
+        <li>No access to your other Google Drive files beyond backup files created by the App.</li>
+      </ul>
+
+      <h2 class="font-display pt-4 text-2xl font-bold text-paper">5. Sharing</h2>
+      <p>
+        If you use Android’s share feature, the app or service you choose receives the file under its own privacy policy.
+      </p>
+
+      <h2 class="font-display pt-4 text-2xl font-bold text-paper">6. Deletion</h2>
+      <p>
+        Delete recordings in the App or on your device. For Pro backups, delete files in Google Drive or sign out to stop
+        new uploads. Uninstalling removes private app data.
+      </p>
+
+      <h2 class="font-display pt-4 text-2xl font-bold text-paper">7. Security</h2>
+      <p>
+        Drive backup uses encrypted connections (HTTPS). Protect your device and Google account with a strong lock
+        screen and password.
+      </p>
+
+      <h2 class="font-display pt-4 text-2xl font-bold text-paper">8. Children</h2>
+      <p>The Apps are not intended for children under 13.</p>
+
+      <h2 class="font-display pt-4 text-2xl font-bold text-paper">9. Changes</h2>
+      <p>We may update this policy and change the “Last updated” date above.</p>
+
+      <h2 class="font-display pt-4 text-2xl font-bold text-paper">10. Contact</h2>
+      <p>
+        <a class="link-underline text-teal hover:text-teal-dim" href={`mailto:${site.email}`}>{site.email}</a>
+      </p>
+    </div>
+  </article>
+</BaseLayout>
