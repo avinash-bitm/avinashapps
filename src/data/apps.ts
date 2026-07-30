@@ -41,7 +41,7 @@ export const apps: App[] = [
       'Recordings stay on your device',
       'No analytics or ads',
     ],
-    accent: '#2dd4bf',
+    accent: '#8b1538',
   },
   {
     slug: 'sound-recorder-pro',
@@ -67,7 +67,7 @@ export const apps: App[] = [
       'Drive backup only when you enable it',
       'Audio goes to your Google account',
     ],
-    accent: '#38bdf8',
+    accent: '#be123c',
   },
 ];
 

@@ -3,14 +3,14 @@
 @theme {
   --font-display: "Roboto", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Roboto", ui-sans-serif, system-ui, sans-serif;
-  --color-ink: #0c1117;
-  --color-ink-2: #141b24;
-  --color-ink-3: #1c2633;
-  --color-mist: #9aa8b8;
-  --color-paper: #e8eef4;
-  --color-teal: #2dd4bf;
-  --color-teal-dim: #14b8a6;
-  --color-sky: #38bdf8;
+  --color-ink: #12080a;
+  --color-ink-2: #1a0e11;
+  --color-ink-3: #261418;
+  --color-mist: #b8a4a8;
+  --color-paper: #f3eaea;
+  --color-teal: #8b1538;
+  --color-teal-dim: #6b0f2a;
+  --color-sky: #be123c;
 }
 
 @layer base {
@@ -26,7 +26,7 @@
   }
 
   ::selection {
-    background: color-mix(in srgb, var(--color-teal) 40%, transparent);
+    background: color-mix(in srgb, var(--color-teal) 45%, transparent);
   }
 
   a {

@@ -32,7 +32,7 @@ const base = import.meta.env.BASE_URL;
       <div class="reveal reveal-delay-1 mt-4 flex flex-wrap items-center gap-3">
         <h1 class="text-4xl font-bold text-paper sm:text-5xl">{app.name}</h1>
         <span
-          class="rounded px-2 py-0.5 text-xs font-semibold uppercase tracking-wide text-ink"
+          class="rounded px-2 py-0.5 text-xs font-semibold uppercase tracking-wide text-paper"
           style={`background:${app.accent}`}
         >
           {app.tier}
@@ -47,13 +47,13 @@ const base = import.meta.env.BASE_URL;
           href={app.playUrl}
           target="_blank"
           rel="noopener noreferrer"
-          class="rounded-md bg-teal px-5 py-3 text-sm font-semibold text-ink transition hover:bg-teal-dim"
+          class="rounded-md bg-teal px-5 py-3 text-sm font-semibold text-paper transition hover:bg-teal-dim"
         >
           Get on Google Play
         </a>
         <a
           href={`${base}privacy/`}
-          class="rounded-md border border-white/20 px-5 py-3 text-sm font-semibold text-paper transition hover:border-teal/60"
+          class="rounded-md border border-white/20 px-5 py-3 text-sm font-semibold text-paper transition hover:border-sky/60"
         >
           Privacy policy
         </a>
