@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://avinash-bitm.github.io',
-  base: '/sounrecorderwebsite',
+  base: '/avinashapps',
   trailingSlash: 'always',
   vite: {
     plugins: [tailwindcss()],

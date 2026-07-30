@@ -2,8 +2,8 @@
 
 Marketing site for [Private Sound Recorder](https://play.google.com/store/apps/details?id=avinash42.soundrecorder) and future Android apps.
 
-**Live URL (after Pages is enabled):**  
-https://avinash-bitm.github.io/sounrecorderwebsite/
+**Live URL:**  
+https://avinash-bitm.github.io/avinashapps/
 
 ## Local development
 
@@ -41,4 +41,4 @@ Set `paypalUrl` in `src/data/site.ts` to your PayPal.me (or donate) URL.
 Astro is configured with:
 
 - `site`: `https://avinash-bitm.github.io`
-- `base`: `/sounrecorderwebsite`
+- `base`: `/avinashapps`

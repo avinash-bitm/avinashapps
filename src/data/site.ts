@@ -7,5 +7,5 @@ export const site = {
   // TODO: replace with your PayPal.me (or PayPal donate) URL
   paypalUrl: '#donate',
   githubUser: 'avinash-bitm',
-  repoName: 'sounrecorderwebsite',
+  repoName: 'avinashapps',
 } as const;
