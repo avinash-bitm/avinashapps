@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import AppRow from '../../components/AppRow.astro';
+import AppTile from '../../components/AppTile.astro';
 import { apps } from '../../data/apps';
 ---
 
@@ -13,8 +13,8 @@ import { apps } from '../../data/apps';
     <p class="reveal reveal-delay-2 mt-4 max-w-2xl text-base text-mist sm:text-lg">
       Simple Android tools. Try them, and donate only if they help you.
     </p>
-    <div class="mt-6">
-      {apps.map((app, index) => <AppRow app={app} index={index} />)}
+    <div class="mt-10 grid grid-cols-2 gap-4 sm:gap-6 md:max-w-2xl">
+      {apps.map((app, index) => <AppTile app={app} index={index} />)}
     </div>
   </section>
 </BaseLayout>

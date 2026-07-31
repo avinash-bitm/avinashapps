@@ -12,6 +12,7 @@ export interface App {
   features: string[];
   privacyHighlights: string[];
   accent: string;
+  iconLabel: string;
 }
 
 export const apps: App[] = [
@@ -44,30 +45,32 @@ export const apps: App[] = [
       'No analytics or ads',
     ],
     accent: '#8b1538',
+    iconLabel: 'SR',
   },
   {
-    slug: 'sound-recorder-pro',
-    name: 'Sound Recorder Pro',
-    shortName: 'Sound Recorder Pro',
-    tagline: 'Same as free — plus optional Google Drive backup.',
+    slug: 'flashlight',
+    name: 'Flashlight (no UI)',
+    shortName: 'Flashlight',
+    tagline: 'Tap the icon. Light on. Tap again. Light off.',
     description:
-      'All features from Private Sound Recorder, with one addition: optional Google Drive backup and restore to your own account. Everything else — schedules, rolling buffer, HQ formats — is already in the free app.',
-    packageId: 'avinash42.soundrecorder.pro',
+      'A simple lightweight flashlight with no screen. Tap the app icon to turn on your phone’s torch, and tap again to turn it off — nothing else in the way.',
+    packageId: 'avinash42.touch.torch',
     playUrl:
-      'https://play.google.com/store/apps/details?id=avinash42.soundrecorder.pro',
-    tier: 'pro',
+      'https://play.google.com/store/apps/details?id=avinash42.touch.torch',
+    tier: 'free',
     features: [
-      'Everything in Private Sound Recorder',
-      'Optional Google Drive backup and restore — the only Pro difference',
-      'Backup uploads only to your Drive — not our servers',
-      'Sign in only when you choose to back up',
+      'No UI — control the torch from the app icon',
+      'Lightweight and fast',
+      'Tap once to turn on, tap again to turn off',
+      'No ads, no tracking, no account',
     ],
     privacyHighlights: [
-      'No ads or analytics',
-      'Drive backup only when you enable it',
-      'Audio goes to your Google account',
+      'No data collected',
+      'No data shared with third parties',
+      'No analytics or ads',
     ],
-    accent: '#be123c',
+    accent: '#b45309',
+    iconLabel: 'FL',
   },
 ];
 
