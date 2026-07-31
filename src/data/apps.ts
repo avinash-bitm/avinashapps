@@ -12,7 +12,7 @@ export interface App {
   features: string[];
   privacyHighlights: string[];
   accent: string;
-  iconLabel: string;
+  icon: string;
 }
 
 export const apps: App[] = [
@@ -45,7 +45,7 @@ export const apps: App[] = [
       'No analytics or ads',
     ],
     accent: '#8b1538',
-    iconLabel: 'SR',
+    icon: 'icons/sound-recorder.png',
   },
   {
     slug: 'flashlight',
@@ -70,7 +70,7 @@ export const apps: App[] = [
       'No analytics or ads',
     ],
     accent: '#b45309',
-    iconLabel: 'FL',
+    icon: 'icons/flashlight.png',
   },
 ];
 
